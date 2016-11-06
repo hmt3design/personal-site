@@ -1,3 +1,12 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p, li, .navbar-brand {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: medium;
+}
+
 #header {
     background-color: #73f5fc;
     height: 150px;
@@ -17,10 +26,19 @@
     margin-left: 10px;
 }
 
-#widget {
+.widget {
     border-radius: 10px;
     background: #73f5fc;
     width: auto;
     height: 40px;
     padding: 5px 0 5px 20px;
+}
+
+#address-header {
+    text-align: right;
+    padding-top: 75px;
+}
+
+#success_message {
+    display: none;
 }
