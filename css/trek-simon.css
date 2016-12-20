@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+}
+
+/*h1, p {*/
+    /*font-family: 'Six Caps', sans-serif;*/
+    /*color: black;*/
+    /*background-color: #DFA047;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+#simon-game {
+    width: auto;
+    height: auto;
+}
+
+.cls-1 {
+    fill: #ffcc66;
+    margin-bottom: 5px;
+}
+
+.cls-2 {
+    fill: #DFA047;
+    margin-bottom: 5px;
+}
+
+.cls-3 {
+    /*black text for SVG files*/
+    fill: black;
+    font-family: 'Six Caps', sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+.cls-7 {
+    /*white text for SVG files*/
+    fill: white;
+    font-family: 'Six Caps', sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+.cls-4 {
+    fill: #ff9966;
+    margin-bottom: 5px;
+}
+
+.cls-5 {
+    fill: #3366ff;
+    margin-bottom: 5px;
+}
+
+.cls-6 {
+    fill: #ccddff;
+    margin-bottom: 5px;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /*padding-bottom: 60px;*/
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

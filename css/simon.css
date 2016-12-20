@@ -1,0 +1,41 @@
+#redBox {
+    width: 100px;
+    height: 100px;
+    background-color: #e54711;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+#greenBox {
+    width: 100px;
+    height: 100px;
+    background-color: #ff9933;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+#blueBox {
+    width: 100px;
+    height: 100px;
+    background-color: #5599ff;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+#yellowBox {
+    width: 100px;
+    height: 100px;
+    background-color: #ffff99;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.btn {
+     opacity:0.5;
+ }
+.active {
+    opacity: 1;
+}
+th, td {
+    padding: 5px;
+}

@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/trek-simon.css">
+    <link rel="stylesheet" href="css/simon.css">
+    <title>Blog Template for Bootstrap</title>
+</head>
+
+<body>
+<div id="header" class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <img src="img/hmt3design-header.png" height="130" width="300" class="img-responsive"/>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <p id="address-header"><strong>Harry M. Thomas III</strong><br>
+                <a href="mailto:harry@hmt3design.com">harry@hmt3design.com</a><br>
+                210.683.4821</p>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">HMT3Design.com</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="welcome.html">Welcome<span class="sr-only">(current)</span></a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-11">
+            <div class="svg-container">
+                <svg viewBox="0 0 510 90"><title>Top_bar</title><path class="cls-1" d="M495,0H465V30h30a15,15,0,0,0,0-30Z"/><rect class="cls-2" x="205" width="255" height="30"/><path class="cls-1" d="M150,0H75C33.58,0,0,33.39,0,74.59V90H149.5V67.13C149.5,46.53,169.29,30,190,30h10V0Z"/><text class="cls-3" transform="translate(215 24.1)">SIMPLE SIMON GAME</text></svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-2 col-sm-2 col-xs-4">
+            <div class="svg-container">
+                <svg viewBox="0 0 152 60"><rect class="cls-6" width="152" height="60"/><text class="cls-3" transform="translate(120 54)">GNDN</text></svg>
+                <svg id="start" cursor="pointer" viewBox="0 0 152 60"><rect class="cls-1" width="152" height="60"/><text class="cls-3" transform="translate(116 54)">START</text></svg>
+                <svg viewBox="0 0 152 60"><rect class="cls-2" width="152" height="60"/><text id="counter" class="cls-3" transform="translate(100 54)">ROUND: </text></svg>
+                <svg viewBox="0 0 152 60"><rect class="cls-5" width="152" height="60"/><text class="cls-7" transform="translate(110 54)">031306</text></svg>
+                <svg viewBox="0 0 152 60"><rect class="cls-6" width="152" height="60"/><text class="cls-3" transform="translate(110 54)">062207</text></svg>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-sm-10 col-xs-8">
+            <table id="Simon-game">
+                <tr>
+                    <td>
+                        <audio src="sounds/redBox.mp3" id="redBoxAudio" type="audio/mp3"></audio>
+                        <div id="redBox" class="btn square"></div>
+                    </td>
+                    <td>
+                        <audio src="sounds/greenBox.mp3" id="greenBoxAudio" type="audio/mp3"></audio>
+                        <div id="greenBox" class="btn square"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio src="sounds/blueBox.mp3" id="blueBoxAudio" type="audio/mp3"></audio>
+                        <div id="blueBox" class="btn square"></div>
+                    </td>
+                    <td>
+                        <audio src="sounds/yellowBox.mp3" id="yellowBoxAudio" type="audio/mp3"></audio>
+                        <div id="yellowBox" class="btn square"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-11">
+            <div class="svg-container">
+                <svg viewBox="0 0 510 90"><defs><style>.cls-1{fill:#dfa047;}.cls-2{fill:#f1d167;}.cls-3{font-family: 'Six Caps', sans-serif; font-size: x-large;}</style></defs><title>Bottom_bar</title><path class="cls-1" d="M495,90H465V60h30a15,15,0,0,1,0,30Z"/><rect class="cls-2" x="205" y="60" width="255" height="30"/><path class="cls-1" d="M150,90H75C33.58,90,0,56.61,0,15.41V0H149.5V22.87C149.5,43.47,169.29,60,190,60h10V90Z"/><text class="cls-3" transform="translate(215 84.1)">HMT3DESIGN.COM</text><</svg>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/simon.js"></script>
+</html>
