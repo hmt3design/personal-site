@@ -4,16 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <title>Weather Forecast</title>
-    <!-- Latest compiled and minified CSS -->
+    <title>Bootstrap Calculator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans+Condensed:300" rel="stylesheet">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6QF_vEdSzxYly9t2UZSbUgPzvVuqeQ30&libraries=places"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/weather_map.css">
+    <link rel="stylesheet" href="css/calculator.css">
 </head>
 <body>
 <div id="header" class="container-fluid">
@@ -29,7 +26,7 @@
     </div>
 </div>
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -53,36 +50,44 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container-fluid">
-<div id="weather-container" class="container">
-    <h2>Weather forecast</h2>
-    <div class="row">
-        <div id="current-city" class="col-md-4 col-sm-4"></div>
+</div>
+<form name="calculator">
+    <div class="container-fluid col-sm-4 col-sm-offset-4 col-xs-12 text-center">
+        <h2>Bootstrap Calculator</h2>
+        <div class="row">
+            <input id="left_Operand" type="text" class="form-control" placeholder="0" readonly>
+            <input id="center_Operator" type="text" class="form-control" readonly>
+            <input id="right_Operand" type="text" class="form-control" placeholder="0" readonly>
+            <input id="answer" type="text" class="form-control" placeholder="0" readonly>
+        </div>
+        <div class="row">
+            <input class="btn btn-info" type="button" value="1">
+            <input class="btn btn-info" type="button" value="2">
+            <input class="btn btn-info" type="button" value="3">
+            <input class="btn btn-primary" type="button" value="*">
+            <input class="btn btn-primary" type="button" value="/">
+        </div>
+        <div class="row">
+            <input class="btn btn-info" type="button" value="4">
+            <input class="btn btn-info" type="button" value="5">
+            <input class="btn btn-info" type="button" value="6">
+            <input class="btn btn-primary" type="button" value="+">
+            <input class="btn btn-primary" type="button" value="-">
+        </div>
+        <div class="row">
+            <input class="btn btn-info" type="button" value="7">
+            <input class="btn btn-info" type="button" value="8">
+            <input class="btn btn-info" type="button" value="9">
+            <input class="btn btn-primary" type="button" value="">
+            <input class="btn btn-success" type="button" value="=">
+        </div>
+        <div class="row">
+            <input class="btn btn-info" type="button" value="0">
+            <input class="btn btn-info" type="button" value=".">
+            <input class="btn btn-warning" type="button" value="C">
+        </div>
     </div>
-    <div class="table-responsive">
-        <table class="table table-hover">
-            <thead class="thead-default">
-                <tr>
-                    <th>Date</th>
-                    <th>Max</th>
-                    <th>Min</th>
-                    <th> </th>
-                    <th>Forecast</th>
-                    <th>Humidity</th>
-                    <th>Wind</th>
-                    <th>Barometer</th>
-                </tr>
-            </thead>
-            <tbody id="weather-report"></tbody>
-        </table>
-        <!-- This is where I will programmatically send weather data. -->
-    </div>
-</div>
-<div id="google-map" class="container-fluid">
-    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-<div id="map-canvas"></div>
-</div>
-</div>
+</form>
+<script src="js/calculator.js"></script>
 </body>
-<script src="js/weather_map.js"></script>
 </html>
